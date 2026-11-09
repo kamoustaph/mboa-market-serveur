@@ -52,3 +52,10 @@ Pour rétablir la lecture par Nginx et la modification par le groupe web :
 
 ```bash
 sudo chmod 664 /srv/mboamarket/site/promo.html /srv/mboamarket/site/images/novembre.svg
+
+## Pour que ça ne revienne pas
+
+- **Koffi et exploitation** : conserver umask 002 dans l’outil de publication et vérifier les droits avec `sudo mboa-publier --essai`.
+- **Équipe backend** : documenter les variables obligatoires et livrer la configuration avec le code.
+- **Exploitation** : vérifier l’accueil, les promotions, leur affiche et l’API après chaque publication.
+- **Moustapha** : conserver les configurations corrigées et le post-mortem dans Git.
